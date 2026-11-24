@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <title>Проверь себя — тест по ОСАГО и КАСКО — AutoInsure EDU</title>
+  <meta name="description"
+    content="Короткий интерактивный тест по ОСАГО, КАСКО и действиям при ДТП для иностранных водителей в Узбекистане." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ TOP BAR ============ -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__item">
+        <svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+        <span data-i18n="topbar_lic">Работаем с лицензированным страховщиком</span>
+      </span>
+      <span class="topbar__item topbar__item--muted" data-i18n="topbar_note">ОСАГО обязательно для иностранных авто с 1 июля 2025</span>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/>
+          </svg>
+        </span>
+        <span class="logo__lockup">
+          <span class="logo__text">AutoInsure<span class="logo__edu">EDU</span></span>
+          <span class="logo__tag" data-i18n="logo_tag">Автострахование в Узбекистане</span>
+        </span>
+      </a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html" data-i18n="nav_home">Главная</a>
+        <a href="osago.html" data-i18n="nav_osago">ОСАГО</a>
+        <a href="kasko.html" data-i18n="nav_kasko">КАСКО</a>
+        <a href="tests.html" data-i18n="nav_test">Тест</a>
+      </nav>
+      <div class="header__actions">
+        <div class="lang" id="langSwitcher">
+          <button class="lang__btn" data-lang="ru">RU</button>
+          <button class="lang__btn" data-lang="en">EN</button>
+          <button class="lang__btn" data-lang="kz">KZ</button>
+        </div>
+        <a href="osago.html#calc" class="btn btn--accent btn--sm" data-i18n="cta_apply">Оформить</a>
+        <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html" data-i18n="nav_home">Главная</a><span>/</span><span data-i18n="nav_test">Тест</span>
+      </div>
+      <span class="page-hero__eyebrow" data-i18n="test_eyebrow">Проверь себя</span>
+      <h1 data-i18n="test_h1">Тест по ОСАГО, КАСКО и действиям при ДТП</h1>
+      <p class="page-hero__lead" data-i18n="test_lead">
+        Несколько вопросов, чтобы проверить, что вы усвоили. Отвечайте — и сразу видите
+        правильный ответ с пояснением.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="quiz">
+        <div class="quiz__card" data-quiz>
+          <!-- rendered by main.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <div class="logo logo--light"><span class="logo__text">AutoInsure<span class="logo__edu">EDU</span></span></div>
+        <p class="footer__about" data-i18n="footer_about">Информационно-страховой сервис для иностранных водителей в Узбекистане. Образовательный проект.</p>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer_nav">Разделы</h4>
+        <a href="osago.html" data-i18n="nav_osago">ОСАГО</a>
+        <a href="kasko.html" data-i18n="nav_kasko">КАСКО</a>
+        <a href="index.html#calc" data-i18n="nav_calc">Калькулятор</a>
+        <a href="tests.html" data-i18n="nav_test">Тест</a>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer_contacts">Контакты</h4>
+        <a href="https://t.me/shindos01" class="footer__tg" target="_blank" rel="noopener" data-i18n="footer_contact_tg">Telegram: @shindos01</a>
+        <a href="https://t.me/mytezpolisBot" class="footer__tg" target="_blank" rel="noopener" data-i18n="footer_tg">Telegram-бот</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span data-i18n="footer_disclaimer">Демонстрационный образовательный проект. Расчёты предварительные и не являются официальным тарифом страховщика.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/quiz-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

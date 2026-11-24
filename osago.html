@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <title>ОСАГО для иностранных авто в Узбекистане — AutoInsure EDU</title>
+  <meta name="description"
+    content="Что такое ОСАГО, зачем оно нужно иностранному водителю, что покрывает и не покрывает, тарифы, как оформить и что делать при ДТП в Узбекистане." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ TOP BAR ============ -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__item">
+        <svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+        <span data-i18n="topbar_lic">Работаем с лицензированным страховщиком</span>
+      </span>
+      <span class="topbar__item topbar__item--muted" data-i18n="topbar_note">ОСАГО обязательно для иностранных авто с 1 июля 2025</span>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/>
+          </svg>
+        </span>
+        <span class="logo__lockup">
+          <span class="logo__text">AutoInsure<span class="logo__edu">EDU</span></span>
+          <span class="logo__tag" data-i18n="logo_tag">Автострахование в Узбекистане</span>
+        </span>
+      </a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html" data-i18n="nav_home">Главная</a>
+        <a href="osago.html" data-i18n="nav_osago">ОСАГО</a>
+        <a href="kasko.html" data-i18n="nav_kasko">КАСКО</a>
+        <a href="tests.html" data-i18n="nav_test">Тест</a>
+      </nav>
+      <div class="header__actions">
+        <div class="lang" id="langSwitcher">
+          <button class="lang__btn" data-lang="ru">RU</button>
+          <button class="lang__btn" data-lang="en">EN</button>
+          <button class="lang__btn" data-lang="kz">KZ</button>
+        </div>
+        <a href="#calc" class="btn btn--accent btn--sm" data-i18n="cta_apply">Оформить</a>
+        <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html" data-i18n="nav_home">Главная</a><span>/</span><span data-i18n="nav_osago">ОСАГО</span>
+      </div>
+      <span class="page-hero__eyebrow" data-i18n="osago_eyebrow">Обязательное страхование</span>
+      <h1 data-i18n="osago_h1">ОСАГО для иностранных автомобилей в Узбекистане</h1>
+      <p class="page-hero__lead" data-i18n="osago_lead">
+        Планируете поездку в Узбекистан на автомобиле с иностранными номерами?
+        Позаботьтесь о страховой защите до начала движения.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ CONTENT + ASIDE ============ -->
+  <div class="container">
+    <div class="layout">
+      <article class="prose">
+        <h2 id="what" data-i18n="osago_what_t">Что такое ОСАГО</h2>
+        <p data-i18n="osago_what_p1">
+          <strong>ОСАГО</strong> — обязательное страхование гражданской ответственности владельцев
+          транспортных средств. Его задача — обеспечить финансовую защиту потерпевших в ДТП, если
+          водитель застрахованного автомобиля несёт ответственность за причинённый вред.
+        </p>
+        <p data-i18n="osago_what_p2">
+          При управлении автомобилем на территории Республики Узбекистан необходимо иметь страховое
+          покрытие, соответствующее требованиям законодательства страны. Иностранному водителю важно
+          заранее проверить, признаётся ли его международный страховой документ в Узбекистане — и,
+          если нужного покрытия нет, оформить местный полис.
+        </p>
+
+        <div class="callout callout--warn">
+          <div class="callout__ic">!</div>
+          <p>
+            <strong data-i18n="osago_green_s">«Зелёная карта» (Green Card) в Узбекистане не действует.</strong>
+            <span data-i18n="osago_green_t"> Узбекистан не входит в международную систему Green Card, поэтому иностранному водителю нужен местный полис ОСАГО.</span>
+          </p>
+        </div>
+
+        <h2 id="why" data-i18n="osago_why_t">Почему ОСАГО необходимо</h2>
+        <ul>
+          <li data-i18n="osago_why_1"><strong>Защита потерпевших.</strong> Компенсация вреда третьим лицам в пределах страховой суммы.</li>
+          <li data-i18n="osago_why_2"><strong>Финансовая безопасность.</strong> Вам не придётся оплачивать покрываемый ущерб полностью из своего кармана.</li>
+          <li data-i18n="osago_why_3"><strong>Соблюдение закона.</strong> Полис выполняет требование обязательного страхования при въезде.</li>
+          <li data-i18n="osago_why_4"><strong>Спокойствие в поездке.</strong> Вы знаете, как действовать и куда обращаться при ДТП.</li>
+        </ul>
+
+        <h2 id="cover" data-i18n="osago_cover_t">Что покрывает и что не покрывает</h2>
+        <div class="cols">
+          <div class="col-box col-box--yes">
+            <h3 data-i18n="osago_cov_yes">Покрывает</h3>
+            <ul>
+              <li data-i18n="osago_cov_y1">Вред жизни и здоровью третьих лиц</li>
+              <li data-i18n="osago_cov_y2">Ущерб имуществу третьих лиц</li>
+              <li data-i18n="osago_cov_y3">Выплаты в пределах лимитов и условий договора</li>
+            </ul>
+          </div>
+          <div class="col-box col-box--no">
+            <h3 data-i18n="osago_cov_no">Не покрывает</h3>
+            <ul>
+              <li data-i18n="osago_cov_n1">Ремонт собственного авто виновника ДТП</li>
+              <li data-i18n="osago_cov_n2">Угон собственного автомобиля</li>
+              <li data-i18n="osago_cov_n3">Повреждения вне застрахованной ответственности</li>
+              <li data-i18n="osago_cov_n4">Случаи, исключённые законом и договором</li>
+            </ul>
+          </div>
+        </div>
+        <div class="callout">
+          <div class="callout__ic">i</div>
+          <p data-i18n="osago_cov_note">
+            ОСАГО не защищает ваш собственный автомобиль от повреждений. Для этого есть добровольное
+            страхование — <a class="inline" href="kasko.html">КАСКО</a>.
+          </p>
+        </div>
+
+        <h2 id="tariffs" data-i18n="osago_tar_t">Тарифы и покрытие (2026)</h2>
+        <p data-i18n="osago_tar_p">
+          Ниже — ориентировочные базовые тарифы для иностранных номеров по открытым источникам.
+          Итоговая сумма зависит от срока, типа транспорта и условий страховщика.
+        </p>
+        <div class="table-wrap">
+          <table class="tariff">
+            <thead>
+              <tr>
+                <th data-i18n="osago_tar_c1">Тип транспорта</th>
+                <th data-i18n="osago_tar_c2">Покрытие</th>
+                <th data-i18n="osago_tar_c3">Базовый тариф</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td data-i18n="osago_tar_r1">Легковой автомобиль</td><td data-i18n="osago_tar_cov">до 80 млн сум</td><td>320 000 сум</td></tr>
+              <tr><td data-i18n="osago_tar_r2">Грузовой автомобиль</td><td data-i18n="osago_tar_cov2">до 80 млн сум</td><td>560 000 сум</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="calc__disclaimer" style="color:var(--muted);text-align:left" data-i18n="osago_tar_disc">
+          Данные из открытых источников, 2026 г. Не являются официальным тарифом страховщика.
+        </p>
+
+        <h2 id="how" data-i18n="osago_how_t">Как оформить полис</h2>
+        <p data-i18n="osago_how_p">Оформление занимает несколько минут. Подготовьте документы, рассчитайте стоимость и оформите полис онлайн.</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step__n">1</div>
+            <h3 data-i18n="osago_step1_t">Документы</h3>
+            <p data-i18n="osago_step1_p">Паспорт, техпаспорт авто, гос. номер и данные собственника.</p>
+          </div>
+          <div class="step">
+            <div class="step__n">2</div>
+            <h3 data-i18n="osago_step2_t">Расчёт</h3>
+            <p data-i18n="osago_step2_p">Укажите тип авто, страну и срок в калькуляторе ниже.</p>
+          </div>
+          <div class="step">
+            <div class="step__n">3</div>
+            <h3 data-i18n="osago_step3_t">Оформление</h3>
+            <p data-i18n="osago_step3_p">Оформите полис и оплатите через Telegram-бот.</p>
+          </div>
+          <div class="step">
+            <div class="step__n">4</div>
+            <h3 data-i18n="osago_step4_t">Полис</h3>
+            <p data-i18n="osago_step4_p">Получите электронный полис и проверьте срок действия.</p>
+          </div>
+        </div>
+
+        <h2 id="dtp" data-i18n="osago_dtp_t">Что делать при ДТП</h2>
+        <p data-i18n="osago_dtp_p">Попали в ДТП в Узбекистане? Не паникуйте — следуйте инструкции, даже если не знаете местного порядка.</p>
+        <ol>
+          <li data-i18n="osago_dtp_1"><strong>Остановитесь.</strong> Включите аварийку, выставьте знак, убедитесь в отсутствии угрозы пожара.</li>
+          <li data-i18n="osago_dtp_2"><strong>Проверьте людей.</strong> Если есть пострадавшие — вызовите скорую.</li>
+          <li data-i18n="osago_dtp_3"><strong>Позвоните в службы:</strong> 102 — полиция, 103 — скорая, 101 — пожарная.</li>
+          <li data-i18n="osago_dtp_4"><strong>Зафиксируйте.</strong> Сфотографируйте повреждения, номера, место, запишите контакты свидетелей.</li>
+          <li data-i18n="osago_dtp_5"><strong>Сообщите страховщику</strong> по номеру из полиса: номер полиса, дату и место, участников.</li>
+          <li data-i18n="osago_dtp_6"><strong>Не ремонтируйте авто</strong> до согласованного осмотра, если он требуется по правилам.</li>
+        </ol>
+        <div class="callout callout--warn">
+          <div class="callout__ic">!</div>
+          <p data-i18n="osago_dtp_note">
+            Не покидайте место ДТП и не перемещайте автомобили вопреки установленному порядку.
+            Оформление без полиции возможно только в предусмотренных законом случаях.
+          </p>
+        </div>
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="aside">
+        <div class="aside__box">
+          <h4 data-i18n="aside_toc">На этой странице</h4>
+          <nav class="aside__toc">
+            <a href="#what" data-i18n="osago_what_t">Что такое ОСАГО</a>
+            <a href="#why" data-i18n="osago_why_t">Почему необходимо</a>
+            <a href="#cover" data-i18n="osago_cover_t">Что покрывает</a>
+            <a href="#tariffs" data-i18n="osago_tar_t">Тарифы</a>
+            <a href="#how" data-i18n="osago_how_t">Как оформить</a>
+            <a href="#dtp" data-i18n="osago_dtp_t">При ДТП</a>
+          </nav>
+        </div>
+        <div class="aside__box aside__box--green">
+          <h4 data-i18n="aside_calc_t">Рассчитать полис</h4>
+          <p data-i18n="aside_calc_p">Узнайте предварительную стоимость ОСАГО за несколько секунд.</p>
+          <a href="#calc" class="btn btn--accent btn--sm" data-i18n="hero_calc">Рассчитать стоимость</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- ============ CALCULATOR ============ -->
+  <section class="section section--soft" id="calc">
+    <div class="container">
+      <h2 class="section-title" data-i18n="calc_section_t">Калькулятор стоимости ОСАГО</h2>
+      <p class="section-lead" data-i18n="calc_section_l">Предварительный расчёт за несколько секунд. Точную сумму подтвердит страховщик при оформлении.</p>
+      <div style="max-width: 920px; margin: 42px auto 0;">
+        <!-- CALC COMPONENT (reusable — same as on home) -->
+        <div class="calc" data-calc>
+          <div class="calc__form">
+            <div class="calc__grid">
+              <div class="field">
+                <label data-i18n="calc_vehicle">Тип транспорта</label>
+                <select data-calc-vehicle>
+                  <option value="car" data-i18n="calc_v_car">Легковой автомобиль</option>
+                  <option value="truck" data-i18n="calc_v_truck">Грузовой автомобиль</option>
+                  <option value="bus" data-i18n="calc_v_bus">Автобус</option>
+                  <option value="other" data-i18n="calc_v_other">Мото / трактор</option>
+                </select>
+              </div>
+              <div class="field">
+                <label data-i18n="calc_country">Страна регистрации</label>
+                <select data-calc-country>
+                  <option value="kz" data-i18n="calc_c_kz">Казахстан</option>
+                  <option value="ru" data-i18n="calc_c_ru">Россия</option>
+                  <option value="kg" data-i18n="calc_c_kg">Кыргызстан</option>
+                  <option value="tj" data-i18n="calc_c_tj">Таджикистан</option>
+                  <option value="other" data-i18n="calc_c_other">Другая страна</option>
+                </select>
+              </div>
+              <div class="field field--full">
+                <label data-i18n="calc_term">Срок полиса</label>
+                <select data-calc-term>
+                  <option value="15" data-i18n="calc_t_15">15 дней</option>
+                  <option value="60" data-i18n="calc_t_60">2 месяца</option>
+                  <option value="365" data-i18n="calc_t_365">1 год</option>
+                </select>
+              </div>
+              <div class="field field--full">
+                <label data-i18n="calc_type">Тип полиса</label>
+                <div class="seg" data-calc-seg>
+                  <button type="button" class="seg__btn is-active" data-type="classic" data-i18n="calc_classic">Classic</button>
+                  <button type="button" class="seg__btn" data-type="vip" data-i18n="calc_vip">VIP · без ограничений</button>
+                </div>
+              </div>
+              <div class="field field--full">
+                <label data-i18n="calc_plate">Гос. номер (необязательно)</label>
+                <input type="text" data-calc-plate placeholder="A 123 BC 02" />
+              </div>
+            </div>
+          </div>
+          <div class="calc__result">
+            <span class="calc__result-label" data-i18n="calc_result">Предварительная стоимость</span>
+            <div class="calc__price"><b data-calc-price>64 000</b><span data-i18n="calc_sum">сум</span></div>
+            <div class="calc__breakdown">
+              <div class="calc__row"><span data-i18n="calc_base">Базовый тариф (15 дней)</span><b data-calc-base>—</b></div>
+              <div class="calc__row"><span data-i18n="calc_termrow">Срок</span><b data-calc-termlbl>—</b></div>
+              <div class="calc__row"><span data-i18n="calc_typerow">Тип полиса</span><b data-calc-typelbl>—</b></div>
+            </div>
+            <div class="calc__cta">
+              <a href="https://t.me/mytezpolisBot" target="_blank" rel="noopener" class="btn btn--accent" data-i18n="cta_apply">Оформить</a>
+              <p class="calc__disclaimer" data-i18n="calc_disc">Предварительный расчёт, не официальный тариф страховщика.</p>
+            </div>
+          </div>
+        </div>
+        <!-- /CALC COMPONENT -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <div class="logo logo--light"><span class="logo__text">AutoInsure<span class="logo__edu">EDU</span></span></div>
+        <p class="footer__about" data-i18n="footer_about">Информационно-страховой сервис для иностранных водителей в Узбекистане. Образовательный проект.</p>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer_nav">Разделы</h4>
+        <a href="osago.html" data-i18n="nav_osago">ОСАГО</a>
+        <a href="kasko.html" data-i18n="nav_kasko">КАСКО</a>
+        <a href="index.html#calc" data-i18n="nav_calc">Калькулятор</a>
+        <a href="tests.html" data-i18n="nav_test">Тест</a>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer_contacts">Контакты</h4>
+        <a href="https://t.me/shindos01" class="footer__tg" target="_blank" rel="noopener" data-i18n="footer_contact_tg">Telegram: @shindos01</a>
+        <a href="https://t.me/mytezpolisBot" class="footer__tg" target="_blank" rel="noopener" data-i18n="footer_tg">Telegram-бот</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span data-i18n="footer_disclaimer">Демонстрационный образовательный проект. Расчёты предварительные и не являются официальным тарифом страховщика.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#calc" class="sticky-cta" data-i18n="cta_apply">Оформить</a>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

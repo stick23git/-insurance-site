@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <title>КАСКО — защита вашего автомобиля в Узбекистане — AutoInsure EDU</title>
+  <meta name="description"
+    content="КАСКО — добровольное страхование собственного автомобиля: ДТП, угон, пожар, стихия. Чем отличается от ОСАГО и когда стоит оформить." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ TOP BAR ============ -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__item">
+        <svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+        <span data-i18n="topbar_lic">Работаем с лицензированным страховщиком</span>
+      </span>
+      <span class="topbar__item topbar__item--muted" data-i18n="topbar_note">ОСАГО обязательно для иностранных авто с 1 июля 2025</span>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/>
+          </svg>
+        </span>
+        <span class="logo__lockup">
+          <span class="logo__text">AutoInsure<span class="logo__edu">EDU</span></span>
+          <span class="logo__tag" data-i18n="logo_tag">Автострахование в Узбекистане</span>
+        </span>
+      </a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html" data-i18n="nav_home">Главная</a>
+        <a href="osago.html" data-i18n="nav_osago">ОСАГО</a>
+        <a href="kasko.html" data-i18n="nav_kasko">КАСКО</a>
+        <a href="tests.html" data-i18n="nav_test">Тест</a>
+      </nav>
+      <div class="header__actions">
+        <div class="lang" id="langSwitcher">
+          <button class="lang__btn" data-lang="ru">RU</button>
+          <button class="lang__btn" data-lang="en">EN</button>
+          <button class="lang__btn" data-lang="kz">KZ</button>
+        </div>
+        <a href="osago.html#calc" class="btn btn--accent btn--sm" data-i18n="cta_apply">Оформить</a>
+        <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html" data-i18n="nav_home">Главная</a><span>/</span><span data-i18n="nav_kasko">КАСКО</span>
+      </div>
+      <span class="page-hero__eyebrow" data-i18n="kasko_eyebrow">Дополнительная защита</span>
+      <h1 data-i18n="kasko_h1">КАСКО — защита вашего автомобиля от непредвиденных ситуаций</h1>
+      <p class="page-hero__lead" data-i18n="kasko_lead">
+        Ваш автомобиль — это ценность. Защитите его не только от последствий ДТП,
+        но и от других предусмотренных договором рисков.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ CONTENT + ASIDE ============ -->
+  <div class="container">
+    <div class="layout">
+      <article class="prose">
+        <h2 id="what" data-i18n="kasko_what_t">Что такое КАСКО</h2>
+        <p data-i18n="kasko_what_p1">
+          <strong>КАСКО</strong> — добровольный вид страхования транспортного средства, предназначенный
+          для защиты непосредственно вашего автомобиля.
+        </p>
+        <p data-i18n="kasko_what_p2">
+          В отличие от ОСАГО, которое защищает вашу ответственность перед третьими лицами, КАСКО
+          позволяет получить возмещение за повреждение или утрату собственного автомобиля при
+          наступлении предусмотренного договором события.
+        </p>
+
+        <h2 id="risks" data-i18n="kasko_risks_t">Какие риски может покрывать</h2>
+        <div class="cards" style="margin-top:22px">
+          <div class="card">
+            <span class="card__num" data-i18n="kasko_risk1_n">ДТП</span>
+            <h3 data-i18n="kasko_risk1_t">Авария</h3>
+            <p data-i18n="kasko_risk1_d">Столкновение и повреждение автомобиля в дорожном происшествии.</p>
+          </div>
+          <div class="card">
+            <span class="card__num" data-i18n="kasko_risk2_n">Угон</span>
+            <h3 data-i18n="kasko_risk2_t">Хищение</h3>
+            <p data-i18n="kasko_risk2_d">Угон или хищение автомобиля, если это предусмотрено договором.</p>
+          </div>
+          <div class="card">
+            <span class="card__num" data-i18n="kasko_risk3_n">Стихия</span>
+            <h3 data-i18n="kasko_risk3_t">Природные явления</h3>
+            <p data-i18n="kasko_risk3_d">Повреждения от града, бури, наводнения и других стихийных событий.</p>
+          </div>
+          <div class="card">
+            <span class="card__num" data-i18n="kasko_risk4_n">Пожар</span>
+            <h3 data-i18n="kasko_risk4_t">Возгорание</h3>
+            <p data-i18n="kasko_risk4_d">Ущерб от пожара в рамках страхового покрытия.</p>
+          </div>
+        </div>
+
+        <h2 id="why" data-i18n="kasko_why_t">Почему стоит оформить КАСКО</h2>
+        <ul>
+          <li data-i18n="kasko_why_1"><strong>Защита стоимости автомобиля</strong> — компенсация за собственные повреждения.</li>
+          <li data-i18n="kasko_why_2"><strong>Финансовая безопасность</strong> на случай угона, пожара и стихии.</li>
+          <li data-i18n="kasko_why_3"><strong>Гибкость</strong> — программу можно подобрать под свои потребности и бюджет.</li>
+        </ul>
+
+        <h2 id="vs" data-i18n="kasko_vs_t">ОСАГО или КАСКО — в чём разница</h2>
+        <div class="table-wrap">
+          <table class="tariff">
+            <thead>
+              <tr>
+                <th data-i18n="kasko_vs_c0">Критерий</th>
+                <th data-i18n="kasko_vs_c1">ОСАГО</th>
+                <th data-i18n="kasko_vs_c2">КАСКО</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td data-i18n="kasko_vs_r1">Вид</td><td data-i18n="kasko_vs_r1a">Обязательное</td><td data-i18n="kasko_vs_r1b" style="text-align:left;color:inherit">Добровольное</td></tr>
+              <tr><td data-i18n="kasko_vs_r2">Что защищает</td><td data-i18n="kasko_vs_r2a">Ответственность перед третьими лицами</td><td data-i18n="kasko_vs_r2b" style="text-align:left;color:inherit">Собственный автомобиль</td></tr>
+              <tr><td data-i18n="kasko_vs_r3">Угон</td><td data-i18n="kasko_vs_r3a">Не покрывает</td><td data-i18n="kasko_vs_r3b" style="text-align:left;color:inherit">Может покрываться</td></tr>
+              <tr><td data-i18n="kasko_vs_r4">Пожар своего авто</td><td data-i18n="kasko_vs_r4a">Не покрывает</td><td data-i18n="kasko_vs_r4b" style="text-align:left;color:inherit">Может покрываться</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout">
+          <div class="callout__ic">i</div>
+          <p data-i18n="kasko_vs_note">
+            Точный перечень рисков, исключений и условий зависит от конкретного страхового продукта.
+            Стоимость КАСКО рассчитывается индивидуально — по марке, модели, году выпуска и стоимости авто.
+          </p>
+        </div>
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="aside">
+        <div class="aside__box">
+          <h4 data-i18n="aside_toc">На этой странице</h4>
+          <nav class="aside__toc">
+            <a href="#what" data-i18n="kasko_what_t">Что такое КАСКО</a>
+            <a href="#risks" data-i18n="kasko_risks_t">Какие риски</a>
+            <a href="#why" data-i18n="kasko_why_t">Почему оформить</a>
+            <a href="#vs" data-i18n="kasko_vs_t">ОСАГО или КАСКО</a>
+          </nav>
+        </div>
+        <div class="aside__box aside__box--green">
+          <h4 data-i18n="kasko_aside_t">Нужен расчёт КАСКО?</h4>
+          <p data-i18n="kasko_aside_p">Стоимость КАСКО считается индивидуально. Оставьте запрос — мы поможем подобрать программу.</p>
+          <a href="https://t.me/mytezpolisBot" target="_blank" rel="noopener" class="btn btn--accent btn--sm" data-i18n="kasko_aside_btn">Оставить запрос</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="cta-band">
+    <div class="container cta-band__inner">
+      <div>
+        <h2 data-i18n="kasko_cta_t">Сначала оформите обязательное ОСАГО</h2>
+        <p data-i18n="kasko_cta_p">КАСКО — дополнение. Без действующего ОСАГО въезд на иностранном авто невозможен.</p>
+      </div>
+      <a href="osago.html#calc" class="btn btn--accent btn--lg" data-i18n="hero_calc">Рассчитать ОСАГО</a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <div class="logo logo--light"><span class="logo__text">AutoInsure<span class="logo__edu">EDU</span></span></div>
+        <p class="footer__about" data-i18n="footer_about">Информационно-страховой сервис для иностранных водителей в Узбекистане. Образовательный проект.</p>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer_nav">Разделы</h4>
+        <a href="osago.html" data-i18n="nav_osago">ОСАГО</a>
+        <a href="kasko.html" data-i18n="nav_kasko">КАСКО</a>
+        <a href="index.html#calc" data-i18n="nav_calc">Калькулятор</a>
+        <a href="tests.html" data-i18n="nav_test">Тест</a>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer_contacts">Контакты</h4>
+        <a href="https://t.me/shindos01" class="footer__tg" target="_blank" rel="noopener" data-i18n="footer_contact_tg">Telegram: @shindos01</a>
+        <a href="https://t.me/mytezpolisBot" class="footer__tg" target="_blank" rel="noopener" data-i18n="footer_tg">Telegram-бот</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span data-i18n="footer_disclaimer">Демонстрационный образовательный проект. Расчёты предварительные и не являются официальным тарифом страховщика.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="osago.html#calc" class="sticky-cta" data-i18n="cta_apply">Оформить</a>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

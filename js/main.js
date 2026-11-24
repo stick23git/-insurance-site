@@ -67,9 +67,15 @@
     const burger = document.getElementById("burger");
     const nav = document.getElementById("mainNav");
     if (!burger || !nav) return;
-    burger.addEventListener("click", function () { nav.classList.toggle("is-open"); });
+    burger.addEventListener("click", function () {
+      nav.classList.toggle("is-open");
+      burger.classList.toggle("is-active");
+    });
     nav.querySelectorAll("a").forEach(function (a) {
-      a.addEventListener("click", function () { nav.classList.remove("is-open"); });
+      a.addEventListener("click", function () {
+        nav.classList.remove("is-open");
+        burger.classList.remove("is-active");
+      });
     });
   }
 
